@@ -1,0 +1,104 @@
+body{
+    color:white;
+    background-color: rgb(185, 134, 39);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;           
+    padding:20px 40px 10px 50px;
+    height: 400px;
+    background-image: url("https://s1.ax1x.com/2020/08/11/aOSv11.png");
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a{
+    color: cornsilk;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 25px;
+}
+header .mobile{
+    display: none;
+}
+
+.logo {
+    background-image:url("https://s1.ax1x.com/2020/08/11/aOSLtJ.png");
+    background-size: 130px;
+    width:130px;
+    height:140px;
+    display:inline-block;
+    text-indent: -9999999px;
+    background-repeat: no-repeat;
+    position: relative;
+    top:-5px;
+}
+
+section{
+    background-color: rgb(255, 255, 255);
+    color:gray;
+    padding: 20px;
+    display:flex;
+    flex-direction:row;
+}
+
+.feature figure{
+    width：200px; 
+    text-align: center; 
+    margin-left:30px;
+}
+
+.feature figure img{
+    border-radius: 50px;
+    width: 350px; 
+    height:200px;
+    box-shadow: darkolivegreen 10px 10px 10px;
+}
+
+#secid{
+    font-size: 150%;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+li{
+    display:inline-block;
+    margin-right:20px;
+}
+
+@media screen and (max-width: 715px){
+    header{
+        height: 300px;
+        background-position: 0 0;
+    }
+    .logo{
+        margin-left: 100px;
+    }
+    
+    header .mobile{
+        display:inline-block;
+    }
+    header .desktop{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 715px){
+    section{
+        display: block;
+    }
+
+}
+
+
+footer{
+    background-color: black;
+    padding:10px 20px;
+    text-align: center;
+}

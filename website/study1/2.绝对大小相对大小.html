@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>MY Page!</title>
+    <!--margin:外边距，padding:内边距；属性后面设定一个数值为到四边
+    都为这个距离；设置两个数值可分别代表距离上下边和左右边的距离；设置
+    三个值则代表距离上，左右，下边的距离；若设置四个数值，则按照顺时针
+    分别设置距离上右下左边的距离-->
+    <!--默认情况下，body标签自带内外边距，不同浏览器默认的值不一样，
+        但这点我们要清楚，内外边距手动设置为0-->
+    <!--内外边距的值可以是px也可以是%，内边距20%是指占浏览器尺寸的20%
+    除了px和%之外，还有十多种单位-->
+    <style>
+        body{
+            color:white;
+            background-color: rgb(185, 134, 39);
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            background-color: black;           
+            padding:20px 40px 10px 50px;
+        }
+        section{
+            background-color: rgb(255, 255, 255);
+            color:gray;
+            padding: 20px;
+        }
+        footer{
+            background-color: black;
+            padding:10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <section>triple-section</section>
+    <section>lower-section</section>
+    <footer>footer</footer>
+</body>
+</html>

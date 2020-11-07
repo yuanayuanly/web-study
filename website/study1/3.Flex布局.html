@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPage3</title>
+    <!--因为section元素设置了四个边都添加了20px内边距，所以里面的div
+        背景颜色填充也是在内边距范围内的，可以观察下不设置display属性时的样式-->
+    <!--div的display属性默认为“块级（block）”,也就是独占一行区域,但是可以通过
+        width属性来调整宽度；
+        更改display的属性值为inline(内联),则可以在一行内排列，并且每个盒子
+        都是其内容的尺寸，此时width属性值无论设置为多少，实际宽度都只会按照
+        内容的大小来定
+        但若将display的属性更改为：inline-block,则就又可以满足多个元素在
+        同一行，同时还可以自由设定元素所在颜色块的宽度-->
+        <!--flex布局:若将父级元素的display属性设置为flex，则子元素不设置display
+        属性也可以按照inline-block排列,但是内部的多个元素是连在一起的，在子元素中
+        添加margin属性值为auto后，多个元素又会重新独立（也就是按照全部宽度进行
+        弹性布局，无论怎么拉动浏览器页面的大小，每个div宽度都是固定的，但是在
+        页面上的布局始终是自适应的，也就是弹性变化的，外边距会自动调整）。
+        可以多试试不同的输入flex-direction后自动显示的属性值试试-->
+        <!--输入ul>li*3即可快速输出三个无序列表-->
+
+    <style>
+        body{
+            color:white;
+            background-color: rgb(185, 134, 39);
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            background-color: black;           
+            padding:20px 40px 10px 50px;
+        }
+        section{
+            background-color: rgb(255, 255, 255);
+            color:gray;
+            padding: 20px;
+            display:flex;
+            flex-direction:row;
+            
+        }
+        
+        div{
+            background-color: red;
+            margin:auto;
+            width: 100px;    
+        }
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type: none;
+        }
+        li{
+            display:inline-block;
+            margin-right:20px;
+        }
+        footer{
+            background-color: black;
+            padding:10px 20px;
+        }
+    </style>
+    <!--list-style-type:none可以去除列表前的小黑点-->
+    <!--设置只有右外边距的方法：
+    （1）margin:0 20px 0 0 ;
+     (2)margin-right:20px-->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Location</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <h1>Title</h1>
+    </header>
+    <section>
+        <div>Aaaaa</div>
+        <div>B</div>
+        <div>C</div>
+    </section>
+    <section>lower-section</section>
+    <footer>footer</footer>
+</body>
+</html>
